@@ -1,0 +1,13 @@
+# Library System REST API
+
+A RESTful Library Management backend built using Flask and SQLAlchemy.
+
+## Features
+- CRUD operations for books
+- SQLite database
+- RESTful architecture
+
+## Run Locally
+```bash
+pip install -r requirements.txt
+python backend/app.py
