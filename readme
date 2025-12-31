@@ -1,13 +1,77 @@
-# Library System REST API
+📌 Task-02: Library Management System (RESTful API)
 
-A RESTful Library Management backend built using Flask and SQLAlchemy.
+A backend-based Library Management System developed as part of **Task-02** for the **CODTECH Internship Program**. This project implements a RESTful API that supports full CRUD (Create, Read, Update, Delete) operations for managing library books.
 
-## Features
-- CRUD operations for books
-- SQLite database
-- RESTful architecture
+---
 
-## Run Locally
-```bash
-pip install -r requirements.txt
-python backend/app.py
+👨‍💻 About the Project
+
+This project is designed to demonstrate backend development skills using REST architecture. It provides a clean and modular API to manage library inventory, allowing users to add, view, update, and delete book records.
+
+The application follows industry-standard backend practices, including proper routing, database integration, and separation of concerns. It is suitable for academic submission and backend portfolio demonstration.
+
+---
+
+🛠️ Tech Stack Used
+
+- **Python** – Core programming language  
+- **Flask** – Lightweight backend web framework  
+- **Flask-SQLAlchemy** – ORM for database operations  
+- **SQLite** – Lightweight relational database  
+- **REST API** – Stateless client-server architecture  
+- **Git & GitHub** – Version control and code hosting  
+
+---
+
+📂 Project Structure
+
+Library-system_api/
+│
+├── backend/
+│   ├── app.py                 # Application entry point
+│   ├── config.py              # Database configuration
+│   ├── extensions.py          # Shared extensions (SQLAlchemy)
+│   ├── requirements.txt       # Project dependencies
+│   │
+│   ├── models/
+│   │   └── book.py             # Book database model
+│   │
+│   ├── routes/
+│   │   └── book_routes.py      # API routes (CRUD operations)
+│   │
+│   └── database/
+│       └── library.db          # Auto-generated SQLite DB (ignored in Git)
+│
+└── README.md
+
+---
+
+✨ Features
+
+✅ RESTful API design  
+✅ Full CRUD operations for books  
+✅ SQLite database with ORM integration  
+✅ Modular and scalable project structure  
+✅ Automatic database and table creation  
+✅ JSON-based request and response handling  
+✅ Clean separation of routes, models, and configuration  
+
+---
+
+🧩 API Endpoints Overview
+
+| Method | Endpoint              | Description            |
+|------|----------------------|------------------------|
+| POST | /api/books/          | Add a new book         |
+| GET  | /api/books/          | Retrieve all books     |
+| GET  | /api/books/<id>      | Retrieve book by ID    |
+| PUT  | /api/books/<id>      | Update book details    |
+| DELETE | /api/books/<id>    | Delete a book          |
+
+---
+
+🚀 How to Run the Project Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/USERNAME/Library-system_api.git
